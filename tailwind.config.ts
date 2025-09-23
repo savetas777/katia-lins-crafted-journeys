@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['DM Sans', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,16 +50,26 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        // Katia Lins Brand Colors
+        "brand-900": "hsl(var(--brand-900))",
+        "brand-600": "hsl(var(--brand-600))",
+        "brand-200": "hsl(var(--brand-200))",
+        "surface-100": "hsl(var(--surface-100))",
+        "ink-900": "hsl(var(--ink-900))",
+        "ink-600": "hsl(var(--ink-600))",
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-subtle': 'var(--gradient-subtle)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'hover': 'var(--shadow-hover)',
+        'elegant': 'var(--shadow-elegant)',
+      },
+      transitionProperty: {
+        'smooth': 'var(--transition-smooth)',
+        'fast': 'var(--transition-fast)',
       },
       borderRadius: {
         lg: "var(--radius)",

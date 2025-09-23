@@ -1,13 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from 'react';
+import Header from '@/components/Header';
+import HeroBio from '@/components/HeroBio';
+import Audience from '@/components/Audience';
+import BenefitsGrid from '@/components/BenefitsGrid';
+import Authority from '@/components/Authority';
+import DestinationsGrid from '@/components/DestinationsGrid';
+import FAQAccordion from '@/components/FAQAccordion';
+import ContactForm from '@/components/ContactForm';
+import FinalCTA from '@/components/FinalCTA';
+import Footer from '@/components/Footer';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const Index = () => {
+  useScrollReveal();
+
+  useEffect(() => {
+    // Set document title and meta description for SEO
+    document.title = "Katia Lins - Viagens & Turismo | Curadoria Personalizada para Experiências Únicas";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 
+        'Turismóloga com 18 anos de experiência especializada em destinos internacionais, neve e hotéis de luxo. Atendimento humanizado e roteiros personalizados para viajantes exigentes.'
+      );
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Header />
+      <HeroBio />
+      <Audience />
+      <BenefitsGrid />
+      <Authority />
+      <DestinationsGrid />
+      <FAQAccordion />
+      <ContactForm />
+      <FinalCTA />
+      <Footer />
+    </main>
   );
 };
 
