@@ -98,11 +98,20 @@ const Audience = () => {
               }}
             >
               <div className="mb-6">
-                <div className={`w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center transition-all duration-500 ${
+                <div className={`w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center transition-all duration-700 ${
                   isMobile && visibleCards.includes(index) 
                     ? 'scale-110 rotate-6' 
                     : 'group-hover:scale-110'
-                }`}>
+                }`}
+                style={{
+                  transitionDelay: isMobile && visibleCards.includes(index) ? `${index * 150}ms` : '0ms'
+                }}
+                onTransitionEnd={(e) => {
+                  if (isMobile && visibleCards.includes(index) && e.propertyName === 'transform') {
+                    e.currentTarget.style.transform = 'scale(1.1) rotate(0deg)';
+                  }
+                }}
+                >
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
