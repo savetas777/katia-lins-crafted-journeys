@@ -30,9 +30,9 @@ const Index = () => {
     <main className="min-h-screen">
       <Header />
       <HeroBio />
+      <Authority />
       <Audience />
       <BenefitsGrid />
-      <Authority />
       <DestinationsGrid />
       <FAQAccordion />
       <ContactForm />
