@@ -2,7 +2,7 @@ import katiaPortrait from '@/assets/katia-portrait.jpg';
 
 const Authority = () => {
   return (
-    <section className="section-padding bg-white -mt-12">
+    <section id="biografia" className="section-padding bg-white -mt-12">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Portrait */}
