@@ -57,10 +57,10 @@ const FinalCTA = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="flex justify-center">
+            <div className="text-center">
               <Button 
                 onClick={scrollToContact}
-                className="bg-white text-brand-900 hover:bg-brand-200 px-10 py-4 rounded-2xl font-semibold text-xl shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+                className="bg-white text-brand-900 hover:bg-brand-200 px-10 py-4 rounded-2xl font-semibold text-xl shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1 inline-block"
               >
                 Quero minha viagem sob medida
               </Button>
