@@ -18,14 +18,14 @@ const HeroBio = () => {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-center">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-brand-900 leading-tight">
                 Transformo viagens em
                 <span className="block text-brand-600">experiências únicas</span>
               </h1>
               
-              <p className="text-xl text-ink-600 leading-relaxed max-w-lg">
+              <p className="text-xl text-ink-600 leading-relaxed max-w-lg mx-auto">
                 Sou Katia Lins, turismóloga (2007) com 18 anos de atuação. Curadoria 
                 personalizada para perfis exigentes, especialista em destinos internacionais, 
                 neve (Club Med) e hotéis boutique/luxo.
@@ -38,7 +38,7 @@ const HeroBio = () => {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={scrollToContact}
                 className="btn-hero"
@@ -57,7 +57,7 @@ const HeroBio = () => {
             </div>
 
             {/* Authority markers */}
-            <div className="flex flex-wrap gap-6 pt-8 border-t border-brand-200">
+            <div className="flex flex-wrap gap-6 pt-8 border-t border-brand-200 justify-center">
               <div className="text-center">
                 <div className="text-2xl font-bold text-brand-900">18</div>
                 <div className="text-sm text-brand-600">anos de experiência</div>
