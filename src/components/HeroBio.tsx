@@ -70,7 +70,7 @@ const HeroBio = () => {
               
               {/* Portrait */}
               <div className="relative bg-white rounded-[2.5rem] p-4 shadow-elegant">
-                <img src="https://i.postimg.cc/3wdmxh6Z/C-pia-de-DSC04649.jpg" alt="Katia Lins - Especialista em Viagens e Turismo" className="w-full h-auto max-h-96 rounded-[2rem] object-cover" />
+                
               </div>
               
               {/* Floating accent */}
