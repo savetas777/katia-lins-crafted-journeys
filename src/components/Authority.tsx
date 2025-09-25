@@ -10,7 +10,7 @@ const Authority = () => {
             <div className="w-80 h-80 mx-auto lg:mx-0 relative">
               <div className="absolute inset-0 bg-gradient-hero rounded-full opacity-20"></div>
               <img
-                src="https://i.postimg.cc/3wdmxh6Z/C-pia-de-DSC04649.jpg"
+                src="https://i.postimg.cc/jqN6fsjg/ABC-6809.jpg"
                 alt="Katia Lins - Turismóloga especialista"
                 className="w-full h-full object-cover rounded-full border-4 border-white shadow-elegant"
               />
