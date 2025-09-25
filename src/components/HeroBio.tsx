@@ -49,7 +49,6 @@ const HeroBio = () => {
               <Button 
                 variant="outline"
                 className="btn-secondary flex items-center gap-2"
-                disabled
               >
                 <MessageCircle size={20} />
                 Chamar no WhatsApp
