@@ -57,12 +57,14 @@ const FinalCTA = () => {
           </div>
 
           <div className="space-y-6">
-            <Button 
-              onClick={scrollToContact}
-              className="bg-white text-brand-900 hover:bg-brand-200 px-10 py-4 rounded-2xl font-semibold text-xl shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
-            >
-              Quero minha viagem sob medida
-            </Button>
+            <div className="flex justify-center">
+              <Button 
+                onClick={scrollToContact}
+                className="bg-white text-brand-900 hover:bg-brand-200 px-10 py-4 rounded-2xl font-semibold text-xl shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+              >
+                Quero minha viagem sob medida
+              </Button>
+            </div>
             
             <p className="text-brand-200">
               Sem compromisso • Consulta gratuita • Resposta em até 24h
