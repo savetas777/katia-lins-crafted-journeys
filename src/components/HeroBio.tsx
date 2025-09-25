@@ -11,8 +11,16 @@ const HeroBio = () => {
     }
   };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background gradient */}
+      {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-subtle"></div>
+      
+      {/* Animated floating orbs background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-brand-900/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/4 left-1/2 w-72 h-72 bg-brand-600/8 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-brand-900/6 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -73,9 +81,6 @@ const HeroBio = () => {
                 
               </div>
               
-              {/* Floating accent */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-brand-600 rounded-full opacity-10 animate-pulse"></div>
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-brand-900 rounded-full opacity-5"></div>
             </div>
           </div>
         </div>
