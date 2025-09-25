@@ -26,7 +26,7 @@ const Header = () => {
           {/* Logo (cresce visualmente sem aumentar o header) */}
           <div className="flex items-center justify-center w-full md:justify-start md:w-auto">
             <img
-              src="https://i.postimg.cc/05K779VM/Chat-GPT-Image-22-de-set-de-2025-21-53-49.png"
+              src="/src/assets/katia-lins-logo.png"
               alt="Katia Lins"
               className="h-20 w-auto origin-left transform-gpu scale-[1.6] shrink-0 select-none pointer-events-none"
             />
