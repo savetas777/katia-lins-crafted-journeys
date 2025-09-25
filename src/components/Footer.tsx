@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/katialins_viagens/?hl=pt-br" 
                 className="w-10 h-10 bg-brand-600 rounded-full flex items-center justify-center text-white hover:bg-brand-900 transition-colors"
                 aria-label="Instagram"
               >
@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-600" />
-                <span className="text-ink-600">(11) 99999-9999</span>
+                <span className="text-ink-600">(11) 98274-7233</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-brand-600" />
