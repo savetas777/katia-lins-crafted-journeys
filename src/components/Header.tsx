@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container-custom h-16 md:h-20">
         <nav className="h-full flex items-center justify-between gap-6">
           {/* Logo (cresce visualmente sem aumentar o header) */}
-          <div className="flex items-center md:justify-start justify-center flex-1 md:flex-initial">
+          <div className="flex items-center justify-center w-full md:justify-start md:w-auto">
             <img
               src="https://i.postimg.cc/05K779VM/Chat-GPT-Image-22-de-set-de-2025-21-53-49.png"
               alt="Katia Lins"
