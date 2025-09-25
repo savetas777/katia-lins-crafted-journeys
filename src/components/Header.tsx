@@ -60,13 +60,6 @@ const Header = () => {
             </button>
           </div>
 
-          {/* CTA */}
-          <Button
-            onClick={() => scrollToSection('contato')}
-            className="btn-hero text-sm px-6 py-3"
-          >
-            Quero minha viagem sob medida
-          </Button>
         </nav>
       </div>
     </header>
