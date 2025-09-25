@@ -64,16 +64,7 @@ const HeroBio = () => {
 
           {/* Image */}
           <div className="relative max-w-md mx-auto">
-            <div className="relative">
-              {/* Organic shape background */}
-              <div className="absolute inset-0 bg-gradient-hero rounded-[3rem] transform rotate-3 scale-105 opacity-20"></div>
-              
-              {/* Portrait */}
-              <div className="relative bg-white rounded-[2.5rem] p-4 shadow-elegant">
-                
-              </div>
-              
-            </div>
+            
           </div>
         </div>
       </div>
