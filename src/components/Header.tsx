@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import katiaLogo from '@/assets/katia-lins-logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Header = () => {
           {/* Logo (cresce visualmente sem aumentar o header) */}
           <div className="flex items-center justify-center w-full md:justify-start md:w-auto">
             <img
-              src="/src/assets/katia-lins-logo.png"
+              src={katiaLogo}
               alt="Katia Lins"
               className="h-28 md:h-32 w-auto transform-gpu scale-[2] md:scale-[2.2] shrink-0 select-none pointer-events-none"
             />
