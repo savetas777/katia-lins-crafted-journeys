@@ -24,7 +24,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    /* ✅ adiciona os types do Vite no app */
+    "types": ["vite/client"]
   },
   "include": ["src"]
 }
