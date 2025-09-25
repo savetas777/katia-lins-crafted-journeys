@@ -1,17 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 import katiaPortrait from '@/assets/katia-portrait.jpg';
-
 const HeroBio = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contato');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-subtle"></div>
       
@@ -39,21 +38,11 @@ const HeroBio = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={scrollToContact}
-                className="btn-hero"
-              >
+              <Button onClick={scrollToContact} className="btn-hero">
                 Quero minha viagem sob medida
               </Button>
               
-              <Button 
-                variant="outline"
-                className="btn-secondary flex items-center gap-2"
-                
-              >
-                <MessageCircle size={20} />
-                Chamar no WhatsApp
-              </Button>
+              
             </div>
 
             {/* Authority markers */}
@@ -81,11 +70,7 @@ const HeroBio = () => {
               
               {/* Portrait */}
               <div className="relative bg-white rounded-[2.5rem] p-4 shadow-elegant">
-                <img
-                  src="https://i.postimg.cc/jqN6fsjg/ABC-6809.jpg"
-                  alt="Katia Lins - Especialista em Viagens e Turismo"
-                  className="w-full h-auto max-h-96 rounded-[2rem] object-cover"
-                />
+                <img src="https://i.postimg.cc/jqN6fsjg/ABC-6809.jpg" alt="Katia Lins - Especialista em Viagens e Turismo" className="w-full h-auto max-h-96 rounded-[2rem] object-cover" />
               </div>
               
               {/* Floating accent */}
@@ -95,8 +80,6 @@ const HeroBio = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroBio;
