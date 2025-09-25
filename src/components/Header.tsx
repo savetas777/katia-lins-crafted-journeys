@@ -24,11 +24,11 @@ const Header = () => {
       <div className="container-custom h-16 md:h-20">
         <nav className="h-full flex items-center justify-between gap-6">
           {/* Logo (cresce visualmente sem aumentar o header) */}
-          <div className="flex items-center justify-center w-full md:justify-start md:w-auto">
+          <div className="flex items-center justify-center w-full">
             <img
               src="/src/assets/katia-lins-logo.png"
               alt="Katia Lins"
-              className="h-20 w-auto origin-left transform-gpu scale-[1.6] shrink-0 select-none pointer-events-none"
+              className="h-28 w-auto transform-gpu scale-[2] shrink-0 select-none pointer-events-none"
             />
           </div>
 
