@@ -29,9 +29,12 @@ const Header = () => {
       <div className="container-custom">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-brand-900">Katia Lins</h1>
-            <span className="text-sm text-brand-600 font-medium">Viagens & Turismo</span>
+          <div className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="Katia Lins - Viagens & Turismo" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
           {/* Navigation */}
