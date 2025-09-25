@@ -74,7 +74,7 @@ const HeroBio = () => {
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative max-w-md mx-auto">
             <div className="relative">
               {/* Organic shape background */}
               <div className="absolute inset-0 bg-gradient-hero rounded-[3rem] transform rotate-3 scale-105 opacity-20"></div>
@@ -84,7 +84,7 @@ const HeroBio = () => {
                 <img
                   src="https://i.postimg.cc/jqN6fsjg/ABC-6809.jpg"
                   alt="Katia Lins - Especialista em Viagens e Turismo"
-                  className="w-full h-auto rounded-[2rem] object-cover"
+                  className="w-full h-auto max-h-96 rounded-[2rem] object-cover"
                 />
               </div>
               
