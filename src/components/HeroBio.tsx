@@ -15,9 +15,9 @@ const HeroBio = () => {
       <div className="absolute inset-0 bg-gradient-subtle"></div>
       
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="flex justify-center">
           {/* Content */}
-          <div className="space-y-8 text-center">
+          <div className="space-y-8 text-center max-w-4xl">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-brand-900 leading-tight">
                 Transformo viagens em
@@ -60,11 +60,6 @@ const HeroBio = () => {
                 <div className="text-sm text-brand-600">anos com clientes fiéis</div>
               </div>
             </div>
-          </div>
-
-          {/* Image */}
-          <div className="relative max-w-md mx-auto">
-            
           </div>
         </div>
       </div>
