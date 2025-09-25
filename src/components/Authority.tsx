@@ -10,7 +10,7 @@ const Authority = () => {
             <div className="w-80 h-80 mx-auto lg:mx-0 relative">
               <div className="absolute inset-0 bg-gradient-hero rounded-full opacity-20"></div>
               <img
-                src={katiaPortrait}
+                src="https://i.postimg.cc/3wdmxh6Z/C-pia-de-DSC04649.jpg"
                 alt="Katia Lins - Turismóloga especialista"
                 className="w-full h-full object-cover rounded-full border-4 border-white shadow-elegant"
               />
@@ -51,24 +51,7 @@ const Authority = () => {
             </div>
 
             {/* Achievements */}
-            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-brand-200">
-              <div className="text-center p-6 bg-surface-100 rounded-2xl">
-                <div className="text-3xl font-bold text-brand-900 mb-2">18</div>
-                <div className="text-brand-600 font-medium">Anos de atuação</div>
-              </div>
-              <div className="text-center p-6 bg-surface-100 rounded-2xl">
-                <div className="text-3xl font-bold text-brand-900 mb-2">2007</div>
-                <div className="text-brand-600 font-medium">Formação em turismo</div>
-              </div>
-              <div className="text-center p-6 bg-surface-100 rounded-2xl">
-                <div className="text-3xl font-bold text-brand-900 mb-2">+10</div>
-                <div className="text-brand-600 font-medium">Anos com clientes fiéis</div>
-              </div>
-              <div className="text-center p-6 bg-surface-100 rounded-2xl">
-                <div className="text-3xl font-bold text-brand-900 mb-2">100%</div>
-                <div className="text-brand-600 font-medium">Clientes satisfeitos</div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

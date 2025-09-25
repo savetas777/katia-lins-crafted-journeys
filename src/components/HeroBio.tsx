@@ -49,6 +49,7 @@ const HeroBio = () => {
               <Button 
                 variant="outline"
                 className="btn-secondary flex items-center gap-2"
+                
               >
                 <MessageCircle size={20} />
                 Chamar no WhatsApp
@@ -81,7 +82,7 @@ const HeroBio = () => {
               {/* Portrait */}
               <div className="relative bg-white rounded-[2.5rem] p-4 shadow-elegant">
                 <img
-                  src={katiaPortrait}
+                  src="https://i.postimg.cc/jqN6fsjg/ABC-6809.jpg"
                   alt="Katia Lins - Especialista em Viagens e Turismo"
                   className="w-full h-auto rounded-[2rem] object-cover"
                 />

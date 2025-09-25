@@ -1,12 +1,23 @@
 import { MapPin, Plane } from 'lucide-react';
-import travelDestinations from '@/assets/travel-destinations.jpg';
+
+// Galeria com label + URL (pode editar à vontade)
+const gallery: { label: string; url: string }[] = [
+  { label: "Orlando", url: "https://i.postimg.cc/HnpLj4nC/pexels-thatguycraig000-3411135.jpg" },
+  { label: "Aruba", url: "https://i.postimg.cc/vZ1Z1mYD/pexels-talita-kriunas-2147861135-29798710.jpg" },
+  { label: "Turquia", url: "https://i.postimg.cc/bJRyXDTV/pexels-smuldur-2048865.jpg" },
+  { label: "Punta Cana", url: "https://i.postimg.cc/x8x9CwBK/pexels-leorossatti-2646066.jpg" },
+  { label: "Salvador", url: "https://i.postimg.cc/QxCXPMWS/pexels-gabriella-ally-3664539-13733832.jpg" },
+  { label: "Maceió", url: "https://i.postimg.cc/W3sV7pvG/pexels-leon-azevedo-59599161-19074550.jpg" },
+  { label: "Maragogi", url: "https://i.postimg.cc/BZY3xGwF/pexels-ninosouza-18149722.jpg" },
+  { label: "Porto de Galinhas", url: "https://i.postimg.cc/wBpY6x3C/pexels-marceloverfe-30016379.jpg" },
+];
 
 const DestinationsGrid = () => {
   const internationalDestinations = [
     "Orlando",
-    "Aruba", 
+    "Aruba",
     "Turquia",
-    "Punta Cana"
+    "Punta Cana",
   ];
 
   const nationalDestinations = [
@@ -18,7 +29,7 @@ const DestinationsGrid = () => {
     "Natal",
     "Porto Seguro",
     "Curitiba",
-    "Foz do Iguaçu"
+    "Foz do Iguaçu",
   ];
 
   return (
@@ -33,19 +44,34 @@ const DestinationsGrid = () => {
           </p>
         </div>
 
-        {/* Hero image */}
-        <div className="mb-16 relative">
-          <div className="relative h-80 lg:h-96 rounded-3xl overflow-hidden shadow-elegant">
-            <img
-              src={travelDestinations}
-              alt="Destinos de viagem - experiências únicas pelo mundo"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
-            <div className="absolute bottom-8 left-8 text-white">
-              <h3 className="text-2xl font-bold mb-2">Experiências pelo mundo</h3>
-              <p className="text-lg opacity-90">Conhecimento que se transforma em curadoria única</p>
+        {/* Galeria de destinos (múltiplas imagens via URL) */}
+        <div className="mb-16">
+          <div className="flex items-baseline justify-between mb-6">
+            <div>
+              <h3 className="text-2xl font-bold text-brand-900">Experiências pelo mundo</h3>
+              <p className="text-ink-600">Conhecimento que se transforma em curadoria única</p>
             </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {gallery.map((item, i) => (
+              <figure
+                key={i}
+                className="group relative overflow-hidden rounded-2xl shadow-elegant aspect-[4/3]"
+              >
+                <img
+                  src={item.url}
+                  alt={item.label}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/fallback.jpg'; }}
+                />
+                <figcaption className="pointer-events-none absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/50 via-black/10 to-transparent">
+                  <span className="text-white text-sm font-medium drop-shadow">{item.label}</span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
 
@@ -58,10 +84,10 @@ const DestinationsGrid = () => {
               </div>
               <h3 className="text-2xl font-bold text-brand-900">Internacionais</h3>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               {internationalDestinations.map((destination, index) => (
-                <div 
+                <div
                   key={index}
                   className="reveal p-4 bg-surface-100 rounded-xl hover:bg-brand-600 hover:text-white transition-all duration-300 cursor-pointer group"
                   style={{ animationDelay: `${index * 100}ms` }}
@@ -83,10 +109,10 @@ const DestinationsGrid = () => {
               </div>
               <h3 className="text-2xl font-bold text-brand-900">Nacionais</h3>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               {nationalDestinations.map((destination, index) => (
-                <div 
+                <div
                   key={index}
                   className="reveal p-4 bg-surface-100 rounded-xl hover:bg-brand-600 hover:text-white transition-all duration-300 cursor-pointer group"
                   style={{ animationDelay: `${(index + 4) * 100}ms` }}
@@ -100,6 +126,7 @@ const DestinationsGrid = () => {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
