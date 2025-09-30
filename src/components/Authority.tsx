@@ -39,9 +39,11 @@ const Authority = () => {
               </p>
               
               <p className="text-lg text-brand-600 leading-relaxed">
-                Minha agência nasceu de um momento marcante: o convite de uma cliente, 
-                feito enquanto eu realizava um sonho na Capadócia. Percebi que o que 
-                realmente importa é o cuidado com cada jornada.
+                Minha agência nasceu de um momento marcante: o convite especial de uma cliente, 
+                feito enquanto eu realizava um sonho na Capadócia. Ali, entendi que o que 
+                realmente importa não é onde estou, mas o cuidado e a dedicação com cada jornada. 
+                É sobre estar presente em cada detalhe da viagem dos meus clientes — com empatia, 
+                escuta e paixão pelo que faço.
               </p>
               
               <p className="text-lg text-ink-600 leading-relaxed">
