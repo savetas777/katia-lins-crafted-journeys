@@ -10,11 +10,11 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="section-padding bg-brand-900 text-white relative overflow-hidden">
+    <section className="section-padding text-white relative overflow-hidden" style={{ backgroundColor: '#5D4E45' }}>
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-brand-600 rounded-full opacity-10"></div>
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-brand-600 rounded-full opacity-5"></div>
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white/5 rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-48 h-48 bg-white/5 rounded-full"></div>
       </div>
 
       <div className="container-custom relative z-10">
