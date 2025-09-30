@@ -11,12 +11,12 @@ const HeroBio = () => {
     }
   };
   return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 pb-16">
-      {/* Sophisticated gradient background with animated overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-surface-50 to-brand-100"></div>
+      {/* Linear vertical gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-brand-100 via-brand-200 to-brand-300"></div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-brand-200/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-brand-300/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      {/* Decorative overlay elements */}
+      <div className="absolute top-20 right-10 w-72 h-72 bg-brand-400/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       <div className="container-custom relative z-10">
         <div className="flex justify-center">
