@@ -30,6 +30,8 @@ const DestinationsGrid = () => {
     "Porto Seguro",
     "Curitiba",
     "Foz do Iguaçu",
+    "Rio de Janeiro",
+    "Gramado",
   ];
 
   return (
