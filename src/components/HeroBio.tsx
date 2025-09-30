@@ -12,7 +12,7 @@ const HeroBio = () => {
   };
   return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 pb-16">
       {/* Linear vertical gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-brand-100 via-brand-200 to-brand-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-50 via-pink-50 to-orange-50"></div>
       
       {/* Decorative overlay elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-brand-400/20 rounded-full blur-3xl animate-pulse"></div>
